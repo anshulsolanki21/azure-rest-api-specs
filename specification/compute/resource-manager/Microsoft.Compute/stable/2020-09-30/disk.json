@@ -108,7 +108,10 @@
           },
           "Create an ultra managed disk with logicalSectorSize 512E": {
             "$ref": "./examples/CreateAManagedDiskWithLogicalSectorSize.json"
-          }
+          },
+		  "Create a managed disk with security type": {
+			"$ref": "./examples/CreateAManagedDiskWithSecurityType.json"
+		  }
         },
         "x-ms-long-running-operation": true
       },
@@ -1647,6 +1650,18 @@
         "tier": {
           "type": "string",
           "description": "Performance tier of the disk (e.g, P4, S10) as described here: https://azure.microsoft.com/en-us/pricing/details/managed-disks/. Does not apply to Ultra disks."
+        },
+        "securityType": {
+          "type": "string",
+          "description": "Specifies the SecurityType of the VM. It is set as SecureBoot for TrustedVMs.",
+          "enum": [
+            "SecureBoot",
+            "MemoryEncryption"
+          ],
+          "x-ms-enum": {
+            "name": "SecurityTypes",
+            "modelAsString": false
+          }
         }
       },
       "required": [
