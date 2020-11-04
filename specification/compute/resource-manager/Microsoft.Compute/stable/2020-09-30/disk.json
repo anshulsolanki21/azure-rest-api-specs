@@ -109,9 +109,9 @@
           "Create an ultra managed disk with logicalSectorSize 512E": {
             "$ref": "./examples/CreateAManagedDiskWithLogicalSectorSize.json"
           },
-		  "Create a managed disk with security type": {
-			"$ref": "./examples/CreateAManagedDiskWithSecurityType.json"
-		  }
+          "Create a managed disk with security type": {
+            "$ref": "./examples/CreateAManagedDiskWithSecurityType.json"
+          }
         },
         "x-ms-long-running-operation": true
       },
