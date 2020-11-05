@@ -1655,8 +1655,8 @@
           "type": "string",
           "description": "Specifies the SecurityType of the VM. It is set as SecureBoot for TrustedVMs.",
           "enum": [
-            "SecureBoot",
-            "MemoryEncryption"
+            "None",
+            "SecureBoot"
           ],
           "x-ms-enum": {
             "name": "SecurityTypes",
