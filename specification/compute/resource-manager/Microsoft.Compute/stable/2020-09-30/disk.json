@@ -1653,9 +1653,8 @@
         },
         "securityType": {
           "type": "string",
-          "description": "Specifies the SecurityType of the VM. It is set as SecureBoot for TrustedVMs.",
+          "description": "Specifies the SecurityType of the VM. Applicable for OS disks only.",
           "enum": [
-            "None",
             "SecureBoot"
           ],
           "x-ms-enum": {
