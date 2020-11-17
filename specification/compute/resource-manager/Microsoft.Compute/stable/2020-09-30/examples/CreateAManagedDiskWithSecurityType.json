@@ -8,7 +8,9 @@
       "location": "West US",
       "properties": {
         "osType": "Windows",
-        "securityType": "SecureBoot",
+        "securityProfile": {
+          "securityType": "SecureBoot"
+        },
         "creationData": {
           "createOption": "FromImage",
           "imageReference": {
@@ -26,7 +28,9 @@
         "properties": {
           "provisioningState": "Updating",
           "osType": "Windows",
-          "securityType": "SecureBoot",
+          "securityProfile": {
+            "securityType": "SecureBoot"
+          },
           "creationData": {
             "createOption": "FromImage",
             "imageReference": {
@@ -43,7 +47,9 @@
         "properties": {
           "provisioningState": "Updating",
           "osType": "Windows",
-          "securityType": "SecureBoot",
+          "securityProfile": {
+            "securityType": "SecureBoot"
+          },
           "creationData": {
             "createOption": "FromImage",
             "imageReference": {

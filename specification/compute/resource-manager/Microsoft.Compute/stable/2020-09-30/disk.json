@@ -1651,16 +1651,9 @@
           "type": "string",
           "description": "Performance tier of the disk (e.g, P4, S10) as described here: https://azure.microsoft.com/en-us/pricing/details/managed-disks/. Does not apply to Ultra disks."
         },
-        "securityType": {
-          "type": "string",
-          "description": "Specifies the SecurityType of the VM. Applicable for OS disks only.",
-          "enum": [
-            "SecureBoot"
-          ],
-          "x-ms-enum": {
-            "name": "SecurityTypes",
-            "modelAsString": true
-          }
+        "securityProfile": {
+          "$ref": "#/definitions/SecurityProfile",
+          "description": "Contains the security related information for the resource."
         }
       },
       "required": [
@@ -2217,6 +2210,25 @@
         "id"
       ],
       "description": "The source image used for creating the disk."
+    },
+    "SecurityProfile": {
+      "properties": {
+        "securityType": {
+          "type": "string",
+          "description": "Specifies the SecurityType of the VM. Applicable for OS disks only.",
+          "enum": [
+            "SecureBoot"
+          ],
+          "x-ms-enum": {
+            "name": "SecurityTypes",
+            "modelAsString": true
+          }
+        }
+      },
+      "required": [
+        "securityType"
+      ],
+      "description": "Contains the security related information for the resource."
     },
     "GrantAccessData": {
       "properties": {
